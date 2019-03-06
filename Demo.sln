@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.421
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01 HelloWorld", "DemoConsole\01 HelloWorld.csproj", "{9405E2C4-1B07-4414-A68E-18EDDD784858}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01 HelloWorld", "01 HelloWorld\01 HelloWorld.csproj", "{9405E2C4-1B07-4414-A68E-18EDDD784858}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02 ElemenyJezyka", "Zmienne\02 ElemenyJezyka.csproj", "{7166C013-5E4A-425E-9198-9C9E387D85BE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02 ElementyJezyka", "02 ElementyJezyka\02 ElementyJezyka.csproj", "{7166C013-5E4A-425E-9198-9C9E387D85BE}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zadania1", "Zadania1\Zadania1.csproj", "{0F97DCF4-A09B-4844-9FFB-3A7A275BA81F}"
 EndProject
