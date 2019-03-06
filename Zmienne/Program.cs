@@ -99,13 +99,17 @@ namespace Zmienne
             //Deklaracja zmiennej
             int a;
             a = 10; //Inicjowanie zmiennej przez przypisanie
+            
+            //int i System.Int32 to jest to samo. 
             System.Int32 b = 30; //deklaracja + inicjalizacja
 
-            int c = a + b;//inicjowanie zmienne wyrażeniem
-            c++;
+            int c = a + b;//inicjowanie zmiennej wyrażeniem
+
+            //To samo jak wyżej tylko na string'ach
             string tekst = "Hello";
             System.String tekst2;
             tekst2 = " demo";
+            
             /*Rodzaje operatorów:
             Arytmetyczne: + - * / %
             Inkrementacji: ++, -- np. c++
@@ -118,50 +122,35 @@ namespace Zmienne
             Warunkowy: ?:
             */
 
-            //Funkcja if
+            //Funkcja if i przykład użycia operatorów logiczny i porównania
             if ((a == b && a > 10) || b <= 20)
             {
                 //jeżeli prawda
             }
 
+            //Przykład opearatora is. Jeżeli tekst jest string to prawda
             if (tekst is string) { }
-            a += 2;
-            a = a + 2;
-            //konwersja niejawna
-            double z = a;
-            //konwersja jawna
-            a = (int)z;
-            //nie działa tekst = (string)a;
-            tekst = a.ToString();
-            tekst = tekst + tekst2;
-            tekst += tekst2;
 
+            //Operator przypisania +=
+            a += 2;
+            a = a + 2; //to jest to samo
+
+            //Inkrementator
+            a++; //najpierw używa potem powiększa o 1;
+            ++a; //najpierw powiększa o jeden a potem używa zmiennej.
+
+            //Operator konkatenacji (łączenia tekstów)
+            tekst = tekst + tekst2;
+            tekst += tekst2; //Operator przypisania += z operacją konkatenacji
+
+            //Opeartor warunkowy ?: czyli jednoliniowy if.
             tekst = (a == 10) ? "tak" : "nie";
 
-
-            //Deklaracja typow wartościowych
-            /* Nazwa zmiennej: 
-            -nie może zaczynać się od liczby
-            -nie może być nazwą kluczową np. int
-            -nie może mieć spacji.
-            */
-            int typval = 20;
-            int typval2 = typval; //kopiowanie stanu zmiennej
-
-            //Deklaracja typów referencyjnych
-            StringBuilder strBuild = new StringBuilder();
-            StringBuilder strBuild2 = strBuild;
-
-
-            //Dostęp do obiektu
-            //Wywołanie metod instancji
-            strBuild.Append("Hello");
-            strBuild.Append("World");
-            strBuild.ToString();
-
-            //Wywoływanie metod klasy (Statycznych)
-            //StringBuilder.Equals();
-            //int.Parse();
+            //konwersja niejawna. Możliwa z mniejszego do większego (niezawsze).
+            double z = a;
+            //konwersja jawna
+            a = (int)z; //Przykład użycia operatora rzutowania. Nie wszystkie typy mają to zaimplementowane.
+                        //nie działa tekst = (string)a;
 
             //Konwersja niejawna
             int myInt = 20;
@@ -190,6 +179,36 @@ namespace Zmienne
             {
 
             }
+
+            tekst = a.ToString();
+       
+
+
+            //Deklaracja typow wartościowych
+            /* Nazwa zmiennej: 
+            -nie może zaczynać się od liczby
+            -nie może być nazwą kluczową np. int
+            -nie może mieć spacji.
+            */
+            int typval = 20;
+            int typval2 = typval; //kopiowanie stanu zmiennej
+
+            //Deklaracja typów referencyjnych
+            StringBuilder strBuild = new StringBuilder();
+            StringBuilder strBuild2 = strBuild;
+
+
+            //Dostęp do obiektu
+            //Wywołanie metod instancji
+            strBuild.Append("Hello");
+            strBuild.Append("World");
+            strBuild.ToString();
+
+            //Wywoływanie metod klasy (Statycznych)
+            //StringBuilder.Equals();
+            //int.Parse();
+
+
 
             //IF
             if (a == 10)

@@ -16,6 +16,7 @@ namespace SrednieOcen
      */
     class Program
     {
+        //Zmienna na poziomie klasy. 
         static string[] oceny = new string[10];
 
         static void Main(string[] args)
@@ -124,15 +125,12 @@ namespace SrednieOcen
                     Array.Resize(ref oceny, newSize);
                     continue;
                 }
-
                 if (oceny[i] ==null)
                 {
                     oceny[i] = ocena;
                     break;
                 }
             }
-            
-
         }
 
         static void SredniaOcen()
@@ -140,6 +138,7 @@ namespace SrednieOcen
             decimal sumaOcen = 0, liczbaOcen = 0;
             foreach (string ocena in oceny)
             {
+                //Jeżeli komórka jest pusta nie bierzemy do średniej.
                 if(ocena == null)
                 {
                     continue;
