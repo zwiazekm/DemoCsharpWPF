@@ -13,6 +13,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SrednieOcen", "SrednieOcen\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03 Metody", "03 Metody\03 Metody.csproj", "{C03DB9D9-9778-4DAB-B5AE-7613598B254E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZawodySportowe", "ZawodySportowe\ZawodySportowe.csproj", "{0AC318B2-DE6E-41DC-A731-9A95EA66177A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sport1", "Sport1\Sport1.csproj", "{F149D312-D37B-4888-8727-9EF622F1CED0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +43,14 @@ Global
 		{C03DB9D9-9778-4DAB-B5AE-7613598B254E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C03DB9D9-9778-4DAB-B5AE-7613598B254E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C03DB9D9-9778-4DAB-B5AE-7613598B254E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0AC318B2-DE6E-41DC-A731-9A95EA66177A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0AC318B2-DE6E-41DC-A731-9A95EA66177A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0AC318B2-DE6E-41DC-A731-9A95EA66177A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0AC318B2-DE6E-41DC-A731-9A95EA66177A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F149D312-D37B-4888-8727-9EF622F1CED0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F149D312-D37B-4888-8727-9EF622F1CED0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F149D312-D37B-4888-8727-9EF622F1CED0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F149D312-D37B-4888-8727-9EF622F1CED0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

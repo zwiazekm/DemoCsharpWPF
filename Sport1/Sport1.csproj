@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{C03DB9D9-9778-4DAB-B5AE-7613598B254E}</ProjectGuid>
+    <ProjectGuid>{F149D312-D37B-4888-8727-9EF622F1CED0}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>MetodyDemo</RootNamespace>
-    <AssemblyName>03 Metody</AssemblyName>
+    <RootNamespace>Sport1</RootNamespace>
+    <AssemblyName>Sport1</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -32,9 +32,6 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
-  <PropertyGroup>
-    <StartupObject>MetodyDemo.ParametryOut</StartupObject>
-  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -46,13 +43,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Exceptions.cs" />
-    <Compile Include="ParametryOpcjonalne.cs" />
-    <Compile Include="ParametryOut.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ZawodySportowe\ZawodySportowe.csproj">
+      <Project>{0ac318b2-de6e-41dc-a731-9a95ea66177a}</Project>
+      <Name>ZawodySportowe</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
