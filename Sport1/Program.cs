@@ -9,23 +9,26 @@ namespace Sport1
 {
     class Program
     {
+        //Test obsługi zawodów
         static void Main(string[] args)
         {
+            //Obiekt obsługujący zawody
+            Zawody biegi = new Zawody();
+
             Zawodnik z1 = new Zawodnik("Janko", "Walski", 23);
+            biegi.DodajZawodnika(z1);
 
-            //PRzykład inicjalizacji obiektu
             Zawodnik z2 = new Zawodnik("Jerzyk", "Nowak", 19);
+            biegi.DodajZawodnika(z2);
 
-            z1.Imie = "Antek";
-            string imieZ2 = z2.Imie;
+            biegi.DodajZawodnika("Maria", "Anonina", 19);
 
-            z1.ZapiszWynik(2.45M);
-            z2.ZapiszWynik(3.2M);
-
-            Console.WriteLine(z1.InfoZawodnik());
-            Console.WriteLine(z2.InfoZawodnik());
+            Console.WriteLine("Lista startujących w biegu:");
+            foreach (var zawodnik in biegi.ListaZawodnikow())
+            {
+                Console.WriteLine(zawodnik);
+            }
             
-
         }
     }
 }
