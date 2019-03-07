@@ -39,7 +39,9 @@ namespace _05_WPFProject
 
         private void InfoCombo_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            ComboInfoText.Text = InfoCombo.SelectedValue.ToString();
+            ComboBoxItem selection = (ComboBoxItem)InfoCombo.SelectedItem;
+            ComboInfoText.Text = selection.Content.ToString();
+            ComboInfoText.Background = selection.Background;
         }
     }
 }
