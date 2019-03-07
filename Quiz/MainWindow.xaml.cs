@@ -27,8 +27,38 @@ namespace Quiz
 
         private void DajPytanieButton_Click(object sender, RoutedEventArgs e)
         {
+            //Pobierz pytanie
             string pytanie = "Wszystkie struktury oraz klasy są typami referencyjnymi?";
+            //Wyświetl pytanie
             PytanieLabel.Content = pytanie;
+            //Aktywuj kontrolki
+            OdpowiedzCombo.IsEnabled = true;
+            SprawdzButton.IsEnabled = true;
+        }
+
+        private void SprawdzButton_Click(object sender, RoutedEventArgs e)
+        {
+            var selectedItem = (ComboBoxItem)OdpowiedzCombo.SelectedValue;
+            string odp = selectedItem.Content.ToString();
+
+            if (odp=="Fałsz")
+            {
+                ListaWynikow.Content += 
+                    System.Environment.NewLine + //daje znak nowej linii
+                    $"{PytanieLabel.Content} - Dobrze";
+                WynikLabel.Content = "Brawo!!! Prawidłowa odpowiedź";
+            }
+            else
+            {
+                ListaWynikow.Content += 
+                    System.Environment.NewLine + 
+                    $"{PytanieLabel.Content} - Żle";
+                WynikLabel.Content = "Źle!!! Spróbuj jeszcze raz.";
+            }
+            PytanieLabel.Content = "";
+            OdpowiedzCombo.IsEnabled = false;
+            SprawdzButton.IsEnabled = false;
+            
         }
     }
 }

@@ -40,6 +40,7 @@ namespace Klasy
         public int Age { get; set; }
     }
 
+    //Typ wartościowy
     struct Adress
     {
         public string Street;

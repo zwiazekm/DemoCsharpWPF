@@ -5,15 +5,18 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Quiz"
         mc:Ignorable="d"
-        Title="Quiz" Height="450" Width="800">
+        Title="Quiz" Height="450" Width="699">
     <Grid>
         <Button x:Name="DajPytanieButton" Content="Wyświetl pytanie" HorizontalAlignment="Left" Margin="21,23,0,0" VerticalAlignment="Top" Width="134" Height="40" Background="#FFBFC70F" FontSize="16" Click="DajPytanieButton_Click"/>
-        <Label x:Name="PytanieLabel" Content="Label" HorizontalAlignment="Left" Margin="178,23,0,0" VerticalAlignment="Top" Height="52" Width="578"/>
-        <ComboBox x:Name="OdpowiedzCombo" HorizontalAlignment="Left" Margin="300,104,0,0" VerticalAlignment="Top" Width="120" RenderTransformOrigin="1.092,0.273">
+        <Label x:Name="PytanieLabel" Content="Label" HorizontalAlignment="Left" Margin="178,23,0,0" VerticalAlignment="Top" Height="52" Width="483"/>
+        <ComboBox x:Name="OdpowiedzCombo" HorizontalAlignment="Left" Margin="145,98,0,0" VerticalAlignment="Top" Width="132" RenderTransformOrigin="1.092,0.273" IsEnabled="False">
             <ComboBoxItem Background="#FF27FD05" Content="Prawda"/>
             <ComboBoxItem Background="#FFFF0D0D" Content="Fałsz"/>
         </ComboBox>
-        <Label Content="Wybierz dpowiedź:" HorizontalAlignment="Left" Height="30" Margin="178,104,0,0" VerticalAlignment="Top" Width="117"/>
+        <Label Content="Wybierz dpowiedź:" HorizontalAlignment="Left" Height="30" Margin="23,98,0,0" VerticalAlignment="Top" Width="117"/>
+        <Button x:Name="SprawdzButton" Content="Sprawdź" HorizontalAlignment="Left" Height="22" Margin="299,98,0,0" VerticalAlignment="Top" Width="118" Click="SprawdzButton_Click" IsEnabled="False"/>
+        <Label x:Name="WynikLabel" Content="" HorizontalAlignment="Left" Height="30" Margin="440,98,0,0" VerticalAlignment="Top" Width="193" BorderBrush="#FF3C46AE"/>
+        <Label x:Name="ListaWynikow" Content="Wyniki:" HorizontalAlignment="Left" Margin="23,158,0,0" VerticalAlignment="Top" Width="424" Height="163" BorderBrush="#FF2222FB"/>
 
     </Grid>
 </Window>

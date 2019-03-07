@@ -32,6 +32,21 @@
         </ComboBox>
         <Label Content="Pole Wyboru:" HorizontalAlignment="Right" Height="28" Margin="0,140,365,0" VerticalAlignment="Top" Width="92"/>
         <TextBox x:Name="ComboInfoText" HorizontalAlignment="Left" Height="20" Margin="180,167,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="251"/>
+        <Button HorizontalAlignment="Left" Height="46" Margin="357,10,0,0" VerticalAlignment="Top" Width="173">
+            <StackPanel>
+                <Label Content="Test" Height="23" Width="102" FontSize="10" ></Label>
+                <Rectangle Height="9">
+                    <Rectangle.Fill>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <GradientStop Color="Black" Offset="0"/>
+                            <GradientStop Color="White" Offset="1"/>
+                            <GradientStop Color="#FFF6F6F6" Offset="0.612"/>
+                            <GradientStop Color="#FFF51433" Offset="1"/>
+                        </LinearGradientBrush>
+                    </Rectangle.Fill>
+                </Rectangle>
+            </StackPanel>
+        </Button>
 
     </Grid>
 </Window>

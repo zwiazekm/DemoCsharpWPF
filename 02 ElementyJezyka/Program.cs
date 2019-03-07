@@ -155,6 +155,7 @@ namespace Zmienne
             //Konwersja niejawna
             int myInt = 20;
             long myLong = myInt;
+            object objtest = myLong;
 
             //Konwersja jawna
             //checked //wymusza pełną kontrolę typów
