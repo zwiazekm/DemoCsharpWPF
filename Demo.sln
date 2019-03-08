@@ -31,6 +31,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06 KontrolkiWPF", "06 Kontr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07 Pliki", "07 Pliki\07 Pliki.csproj", "{8FFD7F0A-1443-48AF-B8AF-9EA57715976C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08 BazyDanych", "08 BazyDanych\08 BazyDanych.csproj", "{3D335FD1-8544-4FDA-9CC0-C51B354F9E9F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -93,6 +95,10 @@ Global
 		{8FFD7F0A-1443-48AF-B8AF-9EA57715976C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8FFD7F0A-1443-48AF-B8AF-9EA57715976C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8FFD7F0A-1443-48AF-B8AF-9EA57715976C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D335FD1-8544-4FDA-9CC0-C51B354F9E9F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D335FD1-8544-4FDA-9CC0-C51B354F9E9F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D335FD1-8544-4FDA-9CC0-C51B354F9E9F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D335FD1-8544-4FDA-9CC0-C51B354F9E9F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

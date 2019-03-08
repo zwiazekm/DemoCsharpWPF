@@ -13,6 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.IO;
+using System.Configuration;
 
 namespace _07_Pliki
 {
@@ -21,10 +22,12 @@ namespace _07_Pliki
     /// </summary>
     public partial class MainWindow : Window
     {
-        string filePath = @"c:\DemoPliki\wiadomosci.txt";
+        //Zmienna przechowująca lokalizację pliku.
+        string filePath; //Informacja będzie pobrana z pliku config = @"c:\DemoPliki\wiadomosci.txt";
 
         public MainWindow()
         {
+            filePath = ConfigurationManager.AppSettings["filePath"];
             InitializeComponent();
         }
 
@@ -52,6 +55,8 @@ namespace _07_Pliki
         {
             try
             {
+                //Wyświetla lokalizację pliku
+                KatalogTxt.Text = filePath;
                 //Tworzy nowy plik z pierwszą linią
                 File.WriteAllText(filePath, "Lista komunkatów:");
             }
@@ -87,7 +92,7 @@ namespace _07_Pliki
 
         private void TworzKatalogButton_Click(object sender, RoutedEventArgs e)
         {
-            string nowyKatalog = NowKatalogTxt.Text;
+            string nowyKatalog = KatalogTxt.Text;
             Directory.CreateDirectory(nowyKatalog);
             MessageBox.Show("Utworzono katalog");
         }
