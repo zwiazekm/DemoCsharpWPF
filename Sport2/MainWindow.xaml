@@ -8,7 +8,9 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="290" Width="485" Loaded="Window_Loaded">
     <Grid>
-        <Button x:Name="NowyZawodnik" Content="Dodaj" HorizontalAlignment="Left" Margin="19,22,0,0" VerticalAlignment="Top" Width="114" Height="33" Click="NowyZawodnik_Click"/>
+        <Button x:Name="NowyZawodnik" HorizontalAlignment="Left" Margin="19,20,0,0" VerticalAlignment="Top" Width="114" Height="33" Click="NowyZawodnik_Click">
+            <TextBox Height="23" TextWrapping="Wrap" Text="TextBox" Width="120"/>
+        </Button>
         <ListBox x:Name="listaZawodnikow" HorizontalAlignment="Left" Height="135" Margin="19,94,0,0" VerticalAlignment="Top" Width="417">
 
         </ListBox>

@@ -32,10 +32,12 @@ namespace Sport2
             DaneZawodnika oknoZawodnik = new DaneZawodnika();
             if (oknoZawodnik.ShowDialog().Value)
             {
+                
                 //TODO: Odczyt danych z okna
                 int wiek = int.Parse( oknoZawodnik.txtWiek.Text);
                 biegi.DodajZawodnika(
-                    oknoZawodnik.txtImie.Text, oknoZawodnik.txtImie.Text, wiek);
+                    oknoZawodnik.txtImie.Text, 
+                    oknoZawodnik.txtNazwisko.Text, wiek);
                 listaZawodnikow.ItemsSource = biegi.ListaZawodnikow();
             }
         }
