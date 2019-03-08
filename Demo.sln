@@ -29,6 +29,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sport2", "Sport2\Sport2.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06 KontrolkiWPF", "06 KontrolkiWPF\06 KontrolkiWPF.csproj", "{3D454903-2A00-4C38-A5F1-F5C5A57A7ACA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07 Pliki", "07 Pliki\07 Pliki.csproj", "{8FFD7F0A-1443-48AF-B8AF-9EA57715976C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -87,6 +89,10 @@ Global
 		{3D454903-2A00-4C38-A5F1-F5C5A57A7ACA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3D454903-2A00-4C38-A5F1-F5C5A57A7ACA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3D454903-2A00-4C38-A5F1-F5C5A57A7ACA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8FFD7F0A-1443-48AF-B8AF-9EA57715976C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8FFD7F0A-1443-48AF-B8AF-9EA57715976C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8FFD7F0A-1443-48AF-B8AF-9EA57715976C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8FFD7F0A-1443-48AF-B8AF-9EA57715976C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
